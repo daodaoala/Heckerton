@@ -1,0 +1,107 @@
+<html>
+
+<head>
+  <title>search result page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      background-color: lightgoldenrodyellow;
+    }
+
+    #wrapper {
+      margin: 0 auto;
+    }
+
+    @media (min-width : 768px) {
+      #wrapper {
+        width: 725px;
+      }
+    }
+
+    @media (min-width : 992px) {
+      #wrapper {
+        width: 940px;
+      }
+    }
+
+    @media (min-width : 1200px) {
+      #wrapper {
+        width: 1120px;
+      }
+    }
+
+    /* 검색 창 */
+    #re-search {
+      height: 150px;
+      line-height: 150px;
+      text-align: center;
+    }
+
+    #search {
+      width: 70%;
+      height: 3.0em;
+    }
+
+    #submit {
+      background-color: lightgray;
+      width: 5.0em;
+      height: 3.0em;
+      ;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    /* 검색 결과 */
+    .con-result {
+      margin-left: 3px;
+      margin-top: 5px;
+    }
+
+    .result-ank {
+      font-size: 15px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <iframe id=nav src="navbar.html" width=100% height=50px scrolling="no"></iframe>
+  <div id=wrapper>
+    <div id="re-search">
+      <form action="search_result_page.html">
+        <input id="search" name="search_word" placeholder="&nbsp원하는 책을 검색하세요.">
+        <button id="submit" type="submit" name="click" value="검색">검색</button>
+      </form>
+    </div>
+    <div id="search-result">
+      <?php
+                include './dbconn.php';
+
+                $search_data = $_GET['search_word'];
+
+                $query = "select * from sejong_comment where title like '%$search_data%' or writer like '%$search_data%' or publisher like '%$search_data%' ";
+                $result = mysqli_query($conn, $query);
+            ?>
+      <div id=result-count>검색 결과 :
+        <? echo mysqli_num_rows($result) ?>건</div>
+      <br>
+      <hr><br>
+      <div>
+        <?php
+                 while($row = mysqli_fetch_array($result)){
+                    ?><div class='con-result'><a class='result-ank' href='detail_page.php?bookidx=<?echo $row[' book_id']?>'>
+            <?
+                    echo $row['grade'], ", ", $row['comment'];
+                    echo "</a></div>";
+                }
+            ?>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
