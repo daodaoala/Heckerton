@@ -8,3 +8,7 @@
 
 ### 시스템 개발 환경
 <img width="700" alt="20210109_002308" src="https://user-images.githubusercontent.com/67010327/104032044-ed5a3b00-5210-11eb-9929-b97f20048755.png">
+
+## 상세 화면
+<img width="691" alt="1" src="https://user-images.githubusercontent.com/67010327/104032827-10391f00-5212-11eb-9cd0-0d7ebe2bcaf6.png">
+
