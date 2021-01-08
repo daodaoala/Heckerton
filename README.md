@@ -17,3 +17,12 @@
 <img width="691" alt="5" src="https://user-images.githubusercontent.com/67010327/104032839-129b7900-5212-11eb-9e8d-5fc6f4d9b40d.png">
 <img width="691" alt="6" src="https://user-images.githubusercontent.com/67010327/104032830-116a4c00-5212-11eb-8179-47024564d3ba.png">
 <img width="691" alt="7" src="https://user-images.githubusercontent.com/67010327/104032833-1202e280-5212-11eb-9cf2-e79eeb8affe2.png">
+
+### 관리자 로그인
+<img width="691" alt="8" src="https://user-images.githubusercontent.com/67010327/104032835-1202e280-5212-11eb-9002-18237a2acd37.png">
+
+### 오픈 채팅 클릭
+<img width="691" alt="1" src="https://user-images.githubusercontent.com/67010327/104033195-905f8480-5212-11eb-8cea-87b7795698bb.png">
+
+### 학과 정보 클릭
+<img width="691" alt="2" src="https://user-images.githubusercontent.com/67010327/104033384-cb61b800-5212-11eb-8170-1adfa977866a.png">
