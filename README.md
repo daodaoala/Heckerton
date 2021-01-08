@@ -7,4 +7,4 @@
 * 유학생을 위한 커뮤니티 컨텐츠 제공 (ex. 6개의 언어로 제공된 오픈 채팅방, 1:1 멘토링 시스템, 강의평 작성)
 
 ### 시스템 개발 환경
-<img width="650" alt="20210109_002308" src="https://user-images.githubusercontent.com/67010327/104032044-ed5a3b00-5210-11eb-9929-b97f20048755.png">
+<img width="700" alt="20210109_002308" src="https://user-images.githubusercontent.com/67010327/104032044-ed5a3b00-5210-11eb-9929-b97f20048755.png">
